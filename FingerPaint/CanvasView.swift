@@ -40,5 +40,36 @@ class CanvasView: UIView {
         
         CGContextStrokePath(context)
     }
+    
+    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
+        let t = touches.anyObject() as UITouch
+        let point = t.locationInView(self)
+        println("touch: \(point)")
+    }
+    
+    func setupColorPickers() {
+        let colors : [UIColor] = [
+            UIColor(red: 0, green: 0, blue: 0, alpha: 1),
+            UIColor(red: 0x17/255.0, green: 0xA3/255.0, blue: 0xA5/255.0, alpha: 1),
+            UIColor(red: 0x8D/255.0, green: 0xBF/255.0, blue: 0x67/255.0, alpha: 1),
+            UIColor(red: 0xFC/255.0, green: 0xCB/255.0, blue: 0x5F/255.0, alpha: 1),
+            UIColor(red: 0xFC/255.0, green: 0x6E/255.0, blue: 0x59/255.0, alpha: 1),
+        ]
+        
+        let positions = [
+            (33,43),(86,43),(138,43),(190,43),(242,43)
+        ]
+        
+        let size = (44,44)
+        
+        var button:UIButton
+        for i in 0...4 {
+            button = UIButton(frame: CGRectMake(CGFloat(positions[i].0), CGFloat(positions[1].1), CGFloat(size.0), CGFloat(size.1)))
+            button.backgroundColor = colors[i]
+            button.tag = i
+            self.addSubview(button)
+        }
+        
+    }
 
 }

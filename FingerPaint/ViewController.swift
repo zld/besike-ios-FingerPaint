@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         self.view.addSubview(canvasView)
         self.canvasView?.drawRect(CGRectMake(100, 100, 100, 100))
+        self.canvasView?.setupColorPickers()
     }
 
     override func didReceiveMemoryWarning() {
