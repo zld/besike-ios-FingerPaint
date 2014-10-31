@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>994622AB-27F8-4260-97EE-6D803181576F</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</key>
+		<string>https://github.com/hayeah/ios-FingerPaint-spec.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</key>
+		<string>spec/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hayeah/ios-FingerPaint-spec.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</string>
+			<key>IDESourceControlWCCName</key>
+			<string>spec</string>
+		</dict>
+	</array>
+</dict>
+</plist>
