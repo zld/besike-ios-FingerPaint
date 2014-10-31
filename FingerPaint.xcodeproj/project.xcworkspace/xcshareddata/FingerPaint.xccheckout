@@ -6,24 +6,40 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>994622AB-27F8-4260-97EE-6D803181576F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FingerPaint</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>B5E0213C43C481D549E2471FFA0709095651F420</key>
+		<string>https://github.com/zld/besike-ios-FingerPaint.git</string>
 		<key>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</key>
 		<string>https://github.com/hayeah/ios-FingerPaint-spec.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FingerPaint.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>B5E0213C43C481D549E2471FFA0709095651F420</key>
+		<string>../..</string>
 		<key>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</key>
-		<string>spec/</string>
+		<string>../..FingerPaintTests/spec/</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/hayeah/ios-FingerPaint-spec.git</string>
+	<string>https://github.com/zld/besike-ios-FingerPaint.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</string>
+	<string>B5E0213C43C481D549E2471FFA0709095651F420</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B5E0213C43C481D549E2471FFA0709095651F420</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FingerPaint</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

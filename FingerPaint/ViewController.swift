@@ -20,8 +20,9 @@ class ViewController: UIViewController {
         self.canvasView?.backgroundColor = UIColor.whiteColor()
         
         self.view.addSubview(canvasView)
-        self.canvasView?.drawRect(CGRectMake(100, 100, 100, 100))
+//        self.canvasView?.drawRect(CGRectMake(100, 100, 100, 100))
         self.canvasView?.setupColorPickers()
+        self.canvasView?.setupClearButton()
     }
 
     override func didReceiveMemoryWarning() {

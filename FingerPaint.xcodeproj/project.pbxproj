@@ -10,6 +10,8 @@
 		7459E45D1A03797100AD1162 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459E45C1A03797100AD1162 /* CanvasView.swift */; };
 		7459E45E1A037B2800AD1162 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459E45C1A03797100AD1162 /* CanvasView.swift */; };
 		7459E45F1A03831A00AD1162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D666711A032D3D0044C122 /* Main.storyboard */; };
+		7459E4641A03B67300AD1162 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459E4631A03B67300AD1162 /* Path.swift */; };
+		7459E4651A03B67300AD1162 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7459E4631A03B67300AD1162 /* Path.swift */; };
 		74D6666E1A032D3D0044C122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D6666D1A032D3D0044C122 /* AppDelegate.swift */; };
 		74D666701A032D3D0044C122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D6666F1A032D3D0044C122 /* ViewController.swift */; };
 		74D666731A032D3D0044C122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D666711A032D3D0044C122 /* Main.storyboard */; };
@@ -34,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		7459E45C1A03797100AD1162 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		7459E4631A03B67300AD1162 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		74D666681A032D3D0044C122 /* FingerPaint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPaint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D6666C1A032D3D0044C122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74D6666D1A032D3D0044C122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,8 +91,9 @@
 			children = (
 				74D6666D1A032D3D0044C122 /* AppDelegate.swift */,
 				74D6666F1A032D3D0044C122 /* ViewController.swift */,
-				74D666711A032D3D0044C122 /* Main.storyboard */,
 				7459E45C1A03797100AD1162 /* CanvasView.swift */,
+				7459E4631A03B67300AD1162 /* Path.swift */,
+				74D666711A032D3D0044C122 /* Main.storyboard */,
 				74D666741A032D3D0044C122 /* Images.xcassets */,
 				74D666761A032D3D0044C122 /* LaunchScreen.xib */,
 				74D6666B1A032D3D0044C122 /* Supporting Files */,
@@ -235,6 +239,7 @@
 			files = (
 				74D666701A032D3D0044C122 /* ViewController.swift in Sources */,
 				74D6666E1A032D3D0044C122 /* AppDelegate.swift in Sources */,
+				7459E4641A03B67300AD1162 /* Path.swift in Sources */,
 				7459E45D1A03797100AD1162 /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +252,7 @@
 				74D666901A03769E0044C122 /* ViewController.swift in Sources */,
 				7459E45E1A037B2800AD1162 /* CanvasView.swift in Sources */,
 				74D6668F1A0361800044C122 /* SpecTests.swift in Sources */,
+				7459E4651A03B67300AD1162 /* Path.swift in Sources */,
 				74D666841A032D3D0044C122 /* FingerPaintTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
