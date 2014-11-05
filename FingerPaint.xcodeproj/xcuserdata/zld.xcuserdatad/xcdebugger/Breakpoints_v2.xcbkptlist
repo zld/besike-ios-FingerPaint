@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FingerPaint/CanvasView.swift"
-            timestampString = "436457863.978563"
+            timestampString = "436842314.889787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "touchesBegan(_:withEvent:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FingerPaint/CanvasView.swift"
-            timestampString = "436457881.619388"
+            timestampString = "436842314.889787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "setButtonShadow(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FingerPaint/CanvasView.swift"
-            timestampString = "436457936.653305"
+            timestampString = "436842314.889787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
             landmarkName = "setButtonShadow(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FingerPaint/CanvasView.swift"
-            timestampString = "436457937.447978"
+            timestampString = "436842314.889787"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "setButtonShadow(_:)"
             landmarkType = "5">
          </BreakpointContent>

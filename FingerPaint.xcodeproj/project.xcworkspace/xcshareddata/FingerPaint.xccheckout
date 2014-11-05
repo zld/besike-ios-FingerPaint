@@ -22,7 +22,7 @@
 		<key>B5E0213C43C481D549E2471FFA0709095651F420</key>
 		<string>../..</string>
 		<key>EDAD59ECB96B9C637B538B2F33241ED538AA8C55</key>
-		<string>../..FingerPaintTests/spec/</string>
+		<string>../..FingerPaintTests/spec</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/zld/besike-ios-FingerPaint.git</string>

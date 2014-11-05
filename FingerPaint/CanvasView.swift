@@ -25,10 +25,8 @@ class CanvasView: UIView {
     var selectedButtonTag = -1
     
     override func drawRect(rect: CGRect) {
-//        UIGraphicsBeginImageContext(self.frame.size)
         let context = UIGraphicsGetCurrentContext()
         println(context)
-//        println(self.frame.size)
         
         CGContextSetLineWidth(context, 2.0);
         
@@ -59,60 +57,9 @@ class CanvasView: UIView {
                 CGContextStrokePath(context)
             }
         }
-        
-        if path? != nil && isDrawing {
-            var points :[CGPoint]=path!.points
-            var preX = points[0].x, preY = points[0].y
-            for point in points {
-                CGContextMoveToPoint(context, CGFloat(preX), CGFloat(preY))
-                CGContextAddLineToPoint(context, point.x, point.y)
-                preX = point.x
-                preY = point.y
-            }
-//            currentColor = path!.color
-            CGContextSetStrokeColorWithColor(context, currentColor)
-            CGContextStrokePath(context)
-        }
 
-        
-//        CGContextSetStrokeColorWithColor(context, currentColor)
-//        
-//        CGContextStrokePath(context)
-//        CGContextClearRect(context, self.bounds)
     }
     
-    func setupColorPickers() {
-        let colors : [UIColor] = [
-            UIColor(red: 0, green: 0, blue: 0, alpha: 1),
-            UIColor(red: 0x17/255.0, green: 0xA3/255.0, blue: 0xA5/255.0, alpha: 1),
-            UIColor(red: 0x8D/255.0, green: 0xBF/255.0, blue: 0x67/255.0, alpha: 1),
-            UIColor(red: 0xFC/255.0, green: 0xCB/255.0, blue: 0x5F/255.0, alpha: 1),
-            UIColor(red: 0xFC/255.0, green: 0x6E/255.0, blue: 0x59/255.0, alpha: 1),
-        ]
-        
-        let positions = [
-            (33,43),(86,43),(138,43),(190,43),(242,43)
-        ]
-        
-        let size = (44,44)
-        
-        var button:UIButton
-        for i in 0...4 {
-            button = UIButton(frame: CGRectMake(CGFloat(positions[i].0), CGFloat(positions[1].1), CGFloat(size.0), CGFloat(size.1)))
-            button.backgroundColor = colors[i]
-            button.tag = i
-            button.enabled = true
-            button.addTarget(self, action: "colorPickerTapped:", forControlEvents:UIControlEvents.TouchUpInside)
-
-            button.layer.shadowColor = colors[i].CGColor
-            button.layer.shadowOffset = CGSize(width: 0, height: 0)
-            button.layer.shadowRadius = 0
-            button.layer.shadowOpacity = 1
-            
-            self.addSubview(button)
-        }
-        
-    }
     
     func setButtonShadow(tag: Int){
         for i in 0...4 {
@@ -124,19 +71,11 @@ class CanvasView: UIView {
         }
     }
     
-    func colorPickerTapped(button: UIButton){
-        println("Tapped: \(button.backgroundColor)")
-        selectedButtonTag = button.tag
-        setButtonShadow(button.tag)
-        currentColor = button.backgroundColor!.CGColor
-    }
-    
-    
     override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
         let t = touches.anyObject() as UITouch
         let point = t.locationInView(self)
-        path = Path(color: currentColor)
-        path!.add(point)
+        paths.append(Path(color: currentColor))
+        paths[paths.count - 1].add(point)
         println("Touch: \(point)")
         isDrawing = true
         setNeedsDisplay()
@@ -145,7 +84,7 @@ class CanvasView: UIView {
     override func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
         let t = touches.anyObject() as UITouch
         let point = t.locationInView(self)
-        path!.add(point)
+        paths[paths.count - 1].add(point)
         isDrawing = true
         setNeedsDisplay()
     }
@@ -153,8 +92,7 @@ class CanvasView: UIView {
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         let t = touches.anyObject() as UITouch
         let point = t.locationInView(self)
-        path!.add(point)
-        paths.append(path!)
+        paths[paths.count - 1].add(point)
         isDrawing = false
         setNeedsDisplay()
         
